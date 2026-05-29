@@ -1,0 +1,68 @@
+.bottom-nav-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+}
+
+/* NAVBAR */
+
+.bottom-nav {
+  height: 70px;
+
+  background: white;
+  border-top: 1px solid #ddd;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: relative;
+}
+
+.bottom-nav a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-decoration: none;
+  color: #666;
+
+  font-size: 12px;
+}
+
+.bottom-nav a.active {
+  color: #2DB67D;
+}
+
+/* FLOATING BUTTON */
+
+.fab-button {
+  position: absolute;
+
+  left: 50%;
+  top: 0;
+
+  transform: translate(-50%, -50%);
+
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: #2DB67D;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+
+  z-index: 1001;
+}
